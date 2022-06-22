@@ -1,11 +1,19 @@
 import {useEffect} from "react";
-import {gql, useQuery } from "@apollo/client";
+import {ApolloProvider, gql, useQuery } from "@apollo/client";
 import {client} from "./lib/apollo";
 import { Event } from "./pages/Event";
+import { Router } from "./Router";
+import { BrowserRouter } from "react-router-dom";
 
 function App() {
   return (
-    <Event/>
+    <ApolloProvider client={client}>
+      <BrowserRouter>
+        <Router/>
+      </BrowserRouter>
+      
+    </ApolloProvider>
+    
   )
 }
 
