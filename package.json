@@ -8,8 +8,8 @@
     "preview": "vite preview"
   },
   "engines": {
-    "node": ">=15.0.0",
-    "npm" : "<=5.0.0"
+    "node": "16.15.1",
+    "npm" : "8.11.0"
   },
   "dependencies": {
     "@apollo/client": "^3.6.8",
