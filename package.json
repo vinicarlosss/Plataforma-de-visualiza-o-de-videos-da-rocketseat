@@ -7,6 +7,10 @@
     "build": "tsc && vite build react-scripts",
     "preview": "vite preview"
   },
+  "engines": {
+    "node": ">=15.0.0",
+    "npm" : "<=5.0.0"
+  },
   "dependencies": {
     "@apollo/client": "^3.6.8",
     "@vime/core": "^5.3.1",
