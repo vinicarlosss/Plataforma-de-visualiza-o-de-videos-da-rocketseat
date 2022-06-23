@@ -1,6 +1,7 @@
 import { DefaultUi, Player, Youtube } from "@vime/react";
 import { CaretRight, DiscordLogo, FileArrowDown, Lightning } from "phosphor-react";
 import { gql, useQuery } from "@apollo/client";
+import gif from "../img/react.gif";
 
 import '@vime/core/themes/default.css';
 
@@ -44,11 +45,13 @@ export function Video(props: VideoProps){
 
     if(!data){
         return (
-            <div className="flex-1">
-                <p>Carregando...</p>
+            <div className="flex flex-1 flex-col justify-center items-center">
+                <img src={gif}/>
+                <span>Carregando...</span>
             </div>
         )
     }
+    
 
     return(
         <div className="flex-1">
